@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derek Nguyen - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <article class="about  active" data-page="about">
+
+        <header>
+        <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+        <p>
+            I'm a graduate from the University of Southern California with a Master's in Computer Science and specialization
+            in Artificial Intelligence and Machine Learning.
+            I have a passion for creating and an abundance of experience beyond AI/ML in fullstack, mobile, and game development.
+        </p>
+
+        <p>
+            I'm currently looking for a contract or full-time position as a software engineer. <b>Willing to Relocate.</b>
+        </p>
+        </section>
+
+
+        <!--
+        - service
+        -->
+
+        <section class="service">
+
+        <h3 class="h3 service-title">What i'm doing</h3>
+
+        <ul class="service-list">
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/deep-learning.png" alt="camera icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                Experience in LLMs, computer vision, NLP, and reinforcement learning.
+                </p>
+            </div>
+
+            </li>
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/game-development.png" alt="design icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Development</h4>
+
+                <p class="service-item-text">
+                Experience in Unity and Unreal Engine.
+                </p>
+            </div>
+
+            </li>
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                Knowledgeable in Fullstack Development, backend software
+                </p>
+            </div>
+
+            </li>
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                Professional development of applications for iOS and Android.
+                </p>
+            </div>
+
+            </li>
+
+        </ul>
+
+        </section>
+
+
+        <!--
+        - testimonials
+        -->
+
+        <section class="certifications">
+        
+        <h3 class="h3 testimonials-title">Certifications</h3>
+        
+        <ul class="service-list">
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/game-development.png" alt="camera icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Entry Level Python Developer</h4>
+
+                <p class="service-item-text">
+                Issued Feburary 2023
+                </p>
+            </div>
+
+            </li>
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/deep-learning.png" alt="design icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Microsoft Azure AI Fundamentals</h4>
+
+                <p class="service-item-text">
+                Issued Dec 2023
+                </p>
+            </div>
+
+            </li>
+
+        </ul>
+        
+
+        </section>
+
+
+        <!--
+        - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+            </figure>
+
+            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+            <time datetime="2021-06-14">14 June, 2021</time>
+
+            <div data-modal-text>
+                <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                lot of experience
+                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                consectetur adipiscing
+                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+            </div>
+
+            </div>
+
+        </section>
+
+        </div>
+    </article>
+</body>

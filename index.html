@@ -9,8 +9,9 @@
 
   <!--
     - favicon
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logodn.png" type="image/png">
 
   <!--
     - custom css link
@@ -126,6 +127,12 @@
         <div class="separator"></div>
 
         <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/derekhuynguyen/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
           <li class="social-item">
             <a href="https://www.facebook.com/derek.nguyen.1804/" class="social-link">
@@ -324,7 +331,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/game-development.png" alt="camera icon" width="40">
+                <img src="./assets/images/python.png" width="40">
               </div>
 
               <div class="service-content-box">
@@ -340,7 +347,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/deep-learning.png" alt="design icon" width="40">
+                <img src="./assets/images/azureai.png" width="60">
               </div>
 
               <div class="service-content-box">
@@ -693,15 +700,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Game Dev</button>
+              <button data-filter-btn>Mobile Apps</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Mobile/Web Dev</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>General Software</button>
+              <button data-filter-btn>Game/Web Dev</button>
             </li>
             
 
@@ -730,15 +733,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Game Dev</button>
+                <button data-select-item>Mobile Apps</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Mobile/Web Dev</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>General Software</button>
+                <button data-select-item>Game/Web Dev</button>
               </li>
 
             </ul>
@@ -748,7 +747,7 @@
           <ul class="project-list">
             <!--TODO: CHANGE IMAGES-->
 
-            <li class="project-item  active" data-filter-item data-category="general software">
+            <li class="project-item  active" data-filter-item data-category="game/web dev">
               <a href="https://github.com/derekn4/CurfewBot">
 
                 <figure class="project-img">
@@ -785,14 +784,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="#">
+              <a href="https://github.com/derekn4/EmpatheticLLM">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="finance" loading="lazy">
+                  <img src="./assets/images/empath.PNG" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Empathetic Conversational LM</h3>
@@ -810,7 +809,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/plothole.png" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Plot Hole Detection</h3>
@@ -839,14 +838,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/Derposoft/plot_hole_detection">
+              <a href="https://github.com/Derposoft/product_recommender">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/hmrec.png" alt="finance" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">H&M Product Recommender</h3>
@@ -856,7 +855,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="game dev">
+            <li class="project-item  active" data-filter-item data-category="game/web dev">
               <a href="https://noweber.itch.io/aquarius-emblem">
 
                 <figure class="project-img">
@@ -874,8 +873,8 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="mobile/web dev">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="https://github.com/derekn4/StockApp">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -892,8 +891,8 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="mobile/web dev">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="game/web dev">
+              <a href="https://github.com/derekn4/StockApp">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -909,169 +908,60 @@
 
               </a>
             </li>
-            <!--
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/derekn4/TFIDF-Amazon-Reviews">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/tfidf.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">TFIDF on Amazon Reviews</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Data Engineering + ML Models</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="https://github.com/derekn4/Tip-Calculator">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/tips.gif" loading="lazy">
+                  
+                </figure>
+
+                <h3 class="project-title">Tip Calculator</h3>
+
+                <p class="project-category">iOS Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/derekn4/lane-detection-practice">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/lane.jpg" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Lane Detection</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Image Processing + OpenCV</p>
 
               </a>
             </li>
-          
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-            -->
           </ul>
 
         </section>
@@ -1099,7 +989,27 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/dumbbells.jpg" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <h3 class="h3 blog-item-title">Gym</h3>
+
+                  <p class="blog-text">
+                    I have been active at the gym since August 2023. I've made a lot of progress, but I still have a ways to go!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/hiking.jpg"loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1107,7 +1017,7 @@
                   <h3 class="h3 blog-item-title">Hiking</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    I love going on hikes when I get the chance to step away from technology.
                   </p>
 
                 </div>
@@ -1119,7 +1029,7 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/gaming.jpg" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1127,7 +1037,7 @@
                   <h3 class="h3 blog-item-title">Gaming</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Avid gamer and competitive player.
                   </p>
 
                 </div>
@@ -1135,11 +1045,12 @@
               </a>
             </li>
 
+            <!--COOKING IMAGE-->
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/cooking.jpg" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1147,7 +1058,7 @@
                   <h3 class="h3 blog-item-title">Cooking</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    I will try to cook anything as long as I have an interest in a dish and recipe!
                   </p>
 
                 </div>
@@ -1155,11 +1066,13 @@
               </a>
             </li>
 
+
+            <!--Photography IMAGE-->
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/photography.jpg" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1167,7 +1080,7 @@
                   <h3 class="h3 blog-item-title">Photography</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    I'm a casual photographer! I love being able to take pictures of friends and family in great moments.
                   </p>
 
                 </div>
@@ -1175,11 +1088,13 @@
               </a>
             </li>
 
+
+            <!--Videography IMAGE-->
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/video.jpg" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1187,7 +1102,7 @@
                   <h3 class="h3 blog-item-title">Videography</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    I try to film whenever I'm on a trip and edit everything as some sort of montage! I love saving my memories!
                   </p>
 
                 </div>
@@ -1195,6 +1110,7 @@
               </a>
             </li>
 
+            <!--Concert IMAGE??? idk about this one
             <li class="blog-post-item">
               <a href="#">
 
@@ -1214,176 +1130,7 @@
 
               </a>
             </li>
-            <!--
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
             -->
-
           </ul>
 
         </section>

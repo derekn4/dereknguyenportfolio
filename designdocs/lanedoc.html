@@ -41,7 +41,11 @@
         
             <section class="about-text">
                 <p>
-                    Currently working on Design Docs, but please take a look at the Github Link below!
+                    <!-- Currently working on Design Docs, but please take a look at the Github Link below!<br> -->
+                    
+                    <h3><b><u>Why I Did This Project?</u></b></h3><br>
+                    While studying Machine Learning concepts, I grew interested in <b>Computer Vision</b> and how models could be trained to understand videos/images.
+                    <b>Specifically</b>, I became curious on how self-driving cars actually work and wanted to learn how to detect lanes through Image/Video processing.
                 </p>
             </section>
         
@@ -50,27 +54,11 @@
                 <h3 class="h3 service-title">Software Skills </h3>
     
                 <ul class="service-list">
-    
+
                     <li class="service-item">
         
                         <div class="service-icon-box">
-                            <img src="../assets/images/deep-learning.png" alt="camera icon" width="40">
-                        </div>
-            
-                        <div class="service-content-box">
-                            <h4 class="h4 service-item-title">APIs</h4>
-            
-                            <p class="service-item-text">
-                                Discord API required
-                            </p>
-                        </div>
-        
-                    </li>
-        
-                    <li class="service-item">
-        
-                        <div class="service-icon-box">
-                            <img src="../assets/images/game-development.png" alt="design icon" width="40">
+                            <img src="../assets/images/python.png" alt="design icon" width="40">
                         </div>
             
                         <div class="service-content-box">
@@ -86,14 +74,30 @@
                     <li class="service-item">
         
                         <div class="service-icon-box">
-                            <img src="../assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                            <img src="../assets/images/deep-learning.png" alt="camera icon" width="40">
                         </div>
             
                         <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Web development</h4>
+                            <h4 class="h4 service-item-title">Image Processing</h4>
             
                             <p class="service-item-text">
-                                Knowledgeable in web development for backend API and OAuth
+                                Computer Vision understanding
+                            </p>
+                        </div>
+        
+                    </li>
+
+                    <li class="service-item">
+        
+                        <div class="service-icon-box">
+                            <img src="../assets/images/OpenCV_logo_no_text.png" alt="camera icon" width="40">
+                        </div>
+            
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">OpenCV</h4>
+            
+                            <p class="service-item-text">
+                                OpenCV library required 
                             </p>
                         </div>
         
@@ -102,6 +106,42 @@
                 </ul>
     
             </section>
+
+            <section class="about-text">
+                <h3 class="h3 article-title">Project Description</h3>
+                <p>This project is a standard introduction to <b>Image processing</b> via <b>Python</b> and <b>OpenCV</b>. It deals with simple image pre-processing 
+                    and utilizes various processing techniques in order to extrapolate lane lines from a video.</p>
+
+                <h2>Steps:</h2>
+                <ol>
+                    <li>1. Pre-process image using grayscale and gaussian blur</li>
+                    <li>2. Apply canny edge detection to the image</li>
+                    <li>3. Apply masking region to the image</li>
+                    <li>4. Apply Hough transform to the image</li>
+                    <li>5. Extrapolate the lines found in the hough transform to construct the left and right lane lines</li>
+                    <li>6. Add the extrapolated lines to the input image</li>
+                </ol>
+                <br>
+
+                <h3><u>Definitions</u></h3>
+                <br>
+                <ol>
+                    <li><b>Gaussian Blur:</b> A type of image-blurring filter that uses a Gaussian function (normal distribution) for calculating the transformation to apply to each pixel in the image</li>
+                    <br>
+                    <li><b>Edge Detection:</b> A variety of mathematical methods that aim at identifying edges, defined as curves in a digital image at which the image brightness changes sharply or, more formally, has discontinuities</li>
+                    <br>
+                    <li><b>Canny Edge Detection:</b> Edge Detection operator that uses a multi-stage algorithm to detect a wide range of edges in images</li>
+                    <br>
+                    <li><b>Image Masking:</b> A technique used in photo editing to separate or isolate specific areas of an image from the rest, allowing for more precise editing and manipulation</li>
+                    <br>
+                    <li><b>Hough Transform:</b> A mathematical technique used in image processing and computer vision to detect simple geometric shapes, particularly lines and circles, within an image.</li>
+                </ol>
+            </section>
+
+            <!-- <section class="about-text">
+                <h3 class="h3 article-title">Project Flowchart (Will add soon). </h3>
+                <p>Need to add</p>
+            </section> -->
 
             <section class="service">
                 <h3 class="h3 service-title">Github Repo</h3>

@@ -487,6 +487,13 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
 
 
 

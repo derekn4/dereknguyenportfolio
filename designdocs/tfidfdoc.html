@@ -22,7 +22,7 @@
 <body>
     <!-- Design Document Content for TFIDF Amazon Reviews -->
     <div>
-        <button class="back-button" onclick="location.href='../index.html'" style="color: aliceblue; padding-left: 0.75%; padding-top: .25%;">Back</button>
+        <button class="back-button" onclick="goBack()" style="color: aliceblue; padding-left: 0.75%; padding-top: .25%;">Back</button>
     </div>
 
     <main>
@@ -178,6 +178,11 @@
     - custom js link
     -->
     <script src="../assets/js/script.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <!--
         - ionicon link

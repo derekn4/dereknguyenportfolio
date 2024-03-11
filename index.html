@@ -189,23 +189,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link="about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link="resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Interests</button>
+            <button class="navbar-link" data-nav-link="interests">Interests</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
           </li>
 
         </ul>
@@ -419,7 +419,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article id="resume" class="tab-content">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -681,7 +681,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article id="portfolio" class="tab-content">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -979,7 +979,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="interests">
+      <article id="interests" class="tab-content">
 
         <header>
           <h2 class="h2 article-title">Interests</h2>
@@ -1148,7 +1148,7 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article id="contact" class="tab-content">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1206,6 +1206,40 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbarLinks = document.querySelectorAll('.navbar-link');
+      const tabContents = document.querySelectorAll('.tab-content');
+      const portfolioTab = document.getElementById('portfolio');
+      
+      // Function to show the specified tab
+      function showTab(tab) {
+          tabContents.forEach(function (content) {
+              if (content.id === tab) {
+                  content.classList.add('active');
+              } else {
+                  content.classList.remove('active');
+              }
+          });
+      }
+
+      // Function to handle back button behavior
+      window.onhashchange = function () {
+        const hash = window.location.hash.substr(1);
+        if (!hash.startsWith('designdocs/') && portfolioTab.classList.contains('active')) {
+            // If the hash does not start with 'designdocs/' and portfolio tab is active, show the portfolio tab
+            showTab('portfolio');
+        }
+      };
+
+      navbarLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+              const selectedTab = link.getAttribute('data-nav-link');
+              showTab(selectedTab);
+          });
+      });
+    });
+  </script>
 
 </body>
 
